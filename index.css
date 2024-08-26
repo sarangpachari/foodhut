@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    margin: 0;
+}
+#home{
+    font-family: "Marcellus", serif;
+}
+#about h1{
+    font-family: "Marcellus", serif;
+}
+#about p{
+    font-family: "Josefin Sans", sans-serif;
+}
+#gallery h1{
+    font-family: "Marcellus", serif;
+}
+#contact h1{
+    font-family: "Marcellus", serif;
+}
+#contact label{
+    font-family: "Josefin Sans", sans-serif;
+}

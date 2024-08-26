@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodHut</title>
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- INDEX CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- FLOWBITE CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- <nav class="absolute h-12 bg-transparent w-full flex text-white gap-16 justify-center items-center py-12">
+        <a href="" class="tracking-widest">HOME</a>
+        <a href="" class="tracking-widest">ABOUT</a>
+        <a href="">
+          <img src="images/logo.svg" width="80" height="80" alt="" />
+        </a>
+        <a href="" class="tracking-widest">GALLERY</a>
+        <a href="" class="tracking-widest">CONTACT US</a>
+      </nav> -->
+
+      <nav class="bg-transparent fixed w-full z-20 top-0 start-0 border-none">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://sarangpachari.github.io/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src="images/logo.svg" class="h-16" alt="FoofHut Logo" />
+            <span
+              class="self-center text-2xl text-white font-semibold whitespace-nowrap"
+              >FoodHut</span
+            >
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white bg-slate-800 hover:bg-slate-950 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            >
+              Order Now
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="tracking-widest block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="tracking-widest block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                  >ABOUT</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="tracking-widest block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                  >GALLERY</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="tracking-widest block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section
+      id="home"
+      class="bg-[url('/images/background.jpg')] bg-cover bg-fixed h-lvh pl-12 pt-44 md:pl-36"
+    >
+      <h1 class="text-6xl md:text-8xl text-white tracking-widest font-bold">
+        Food<span class="text-slate-500">Hut</span>
+      </h1>
+      <h2 class="text-3xl text-slate-300 tracking-widest font-medium mt-3">
+        Always Fresh and Delightful
+      </h2>
+      <a href="#gallery"><button
+        class="tracking-widest text-slate-300 border-2 border-slate-600 hover:border-slate-100 hover:text-white p-3 rounded-lg mt-5"
+      >
+        VIEW OUR GALLERY
+      </button></a>
+    </section>
+
+    <section
+      id="about"
+      class="h-full md:h-lvh bg-slate-950 grid grid-cols-1 md:grid-cols-2 place-items-center p-5 gap-20"
+    >
+      <div class="" data-aos="zoom-in">
+        <img
+          src="images/about-section.jpg"
+          class="h-[32rem] border border-double border-8 border-slate-800 rounded-lg hover:translate-x-6 transition-all"
+          alt=""
+        />
+      </div>
+      <div class="max-w-xl" data-aos="zoom-in">
+        <h1 class="text-white text-5xl">
+          About <span class="text-slate-500">Us</span>
+        </h1>
+        <p class="text-white text-lg leading-normal text-justify mt-5">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+          eveniet, recusandae corporis molestias unde sapiente quod ipsam
+          dolorem. Provident debitis unde voluptate laboriosam quis porro fuga
+          ut ducimus quibusdam reprehenderit?
+        </p>
+        <p class="text-slate-400 text-lg leading-normal text-justify mt-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur
+          ullam quis facilis mollitia soluta praesentium doloremque sint sit
+          incidunt, modi laborum repellat deleniti ex voluptas dolorum libero
+          dolor iste.
+        </p>
+        <p class="text-white text-lg leading-normal text-justify mt-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
+          reiciendis in consectetur aspernatur dolor ut ab possimus error natus
+          amet, veritatis cupiditate id consequatur neque! Voluptatem tenetur id
+          dolore culpa.
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery" class="bg-slate-800 p-4 pb-24">
+      <div class="my-8 text-center">
+        <h1 class="text-5xl text-white font-bold py-14">
+          Delicious <span class="text-slate-400">Dishes</span>
+        </h1>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="zoom-in">
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-1.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-2.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-4.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-5.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-6.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-7.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-8.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-9.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-10.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-11.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="images/gallary-12.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="h-auto bg-sky-950 text-white">
+      <div class="text-center pt-32" data-aos="zoom-in">
+        <h1 class="text-5xl">Get In <span class="text-slate-500">Touch</span></h1>
+      </div>
+      <form action="" class="flex flex-col max-w-md mx-auto p-20" data-aos="zoom-in">
+        <label for="name" class="mb-2.5">Name:</label>
+        <input class="w-full p-2.5 mb-5 rounded-lg" type="text" id="name" name="name" required />
+
+        <label for="email" class="mb-2.5">Email:</label>
+        <input class="w-full p-2.5 mb-5 rounded-lg" type="email" id="email" name="email" required />
+
+        <label for="phone" class="mb-2.5">Phone:</label>
+        <input class="w-full p-2.5 mb-5 rounded-lg" type="tel" id="phone" name="phone" />
+
+        <label for="message" class="mb-2.5">Message:</label>
+        <textarea class="w-full p-2.5 mb-5 rounded-lg" id="message" name="message" required></textarea>
+
+        <input type="submit" value="Send Message" class="cursor-pointer bg-slate-700 text-white py-2.5 px-5 rounded-lg" />
+      </form>
+    </section>
+
+    <footer class="bg-slate-700">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href=""
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img src="images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >FoodHut</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#about" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2024
+          <a href="https://sarangpachari.github.io/" class="hover:underline"
+            >Sarang P Achari™</a
+          >. All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- FLOWBITE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
